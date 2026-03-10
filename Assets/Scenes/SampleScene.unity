@@ -585,6 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9de9b3581669a948a6dc72deffc3f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Torque
+  TorqueStrength: 10
 --- !u!1 &1281055596
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ad59206435d224b8da65d3e29d53b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AngularVelocity
+  AngularSpeed: 10
 --- !u!54 &1281055598
 Rigidbody:
   m_ObjectHideFlags: 0
