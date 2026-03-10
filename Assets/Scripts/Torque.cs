@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Torque : MonoBehaviour
 {
@@ -12,11 +13,11 @@ public class Torque : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Keyboard.current.aKey.isPressed)
         {
             rb.AddTorque(10 * Time.deltaTime * Vector3.up);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Keyboard.current.dKey.isPressed)
         {
             rb.AddTorque(10 * Time.deltaTime * Vector3.forward);
         }

@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AngularVelocity : MonoBehaviour
 {
     Rigidbody rb;
+    public float AngularSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -10,11 +12,11 @@ public class AngularVelocity : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Keyboard.current.aKey.isPressed)
         {
-            rb.angularVelocity = Vector3.up;
+            rb.angularVelocity = Vector3.up * AngularSpeed;
         }
         else
         {
